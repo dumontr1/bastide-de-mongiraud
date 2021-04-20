@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+.banner {
+	background-image: linear-gradient(67deg, rgb(0 0 0 / 40%) 51%, rgba(0,0,0,0.2777485994397759) 100%), url('../images/maison.JPG');
+	height: 70vh;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	background-color: #f1f1f1;
+	font-family: 'Rozha One', serif;
+	color: #282c31;
+	letter-spacing: .1em;
+  	margin: 0;
+}
+
+.container {
+	/*width: 850px;*/
+	max-width: 1130px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	padding-right: 80px;
+    padding-left: 80px;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 16px;
+	padding-top: 15px;
+}
+
+.card {
+	width: 220px;
+	height: 360px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: white;
+	padding: 8px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 15%);
+	transition: 1s;
+}
+
+.card a {
+	text-decoration: none;
+	color: #282c31;
+}
+
+.card img {
+	height: 180px;
+}
+
+.card:hover {
+	background-color: #e6e7e3;
+	color: #282c31;
+	transition: 0.5s;
+}
+
+.banner h1 {
+	color: #e6e7e3;
+	margin-top: 0;
+	padding-top: 0;
+	padding-left: 20px;
+    padding-right: 20px;
+	text-align: center;
+}
+
+.banner h2 {
+	color: #e6e7e3;
+	margin-top: 0;
+	text-align: center;
+}
+
+#btn  {
+	background-color: #282c31;
+	color: #e6e7e3;
+	text-decoration: none;
+	padding: 16px;
+	border-radius: 3px;
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid #a29e6e;
+	transition: 1s;
+	box-shadow: 0px 0px 6px 3px rgb(0 0 0 / 35%);
+}
+
+#btn:hover {
+	background-color: #e6e7e3;
+	color: #282c31;
+	transition: 0.5s;
+}
+
+.footer {
+	text-align: center;
+	background-color: #282c31;
+	color: white;
+	padding: 40px;
+}
+
+.navbar {
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	position: sticky;
+	top: 0;
+	z-index: 097;
+}
+
+.navbar img {
+	width: 9%;
+	padding: 16px;
+}
+
+.links {
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.links a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+
+.links a:hover {
+	color: #0d6efd;
+}
+
+.container-loc {
+	width: 850px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	padding-right: 20px;
+    padding-left: 20px;
+}
+
+iframe {
+	/*padding-left: 30px;*/
+	padding-top: 30px;
+}
+
+.container-contact {
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 300px;
+	padding-right: 20px;
+    padding-left: 20px;
+}
+
+@media (max-width: 900px) {
+	.cards {
+		grid-template-columns: 1fr;
+		justify-content: center;
+	}
+	.navbar img {
+		width: 15%;
+		padding: 16px;
+	}
+	.container {
+		/*width: auto;*/
+		padding-right: 20px;
+    	padding-left: 20px;
+	}
+	.container-loc {
+		width: auto;
+	}
+	.container-contact {
+		width: auto;
+	}
+	iframe {
+		width: auto;
+		padding-left: 30px;
+	}
+}
+
+@media (min-height: max-width: 900px) {
+	.cards {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+}
